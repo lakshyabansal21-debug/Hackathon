@@ -22,7 +22,6 @@ app.use(session({
   }
 }));
 
-// No camelCase here!
 function readdb() {
   let rawdata = fs.readFileSync('./db.json', 'utf-8');
   let parseddata = JSON.parse(rawdata);
@@ -41,7 +40,6 @@ function readdb() {
   return parseddata;
 }
 
-// Lowercase function name and variables
 function writedb(datatowrite) {
   fs.writeFileSync('./db.json', JSON.stringify(datatowrite, null, 2));
 }
