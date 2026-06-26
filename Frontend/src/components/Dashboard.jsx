@@ -5,7 +5,7 @@ function Dashboard(props) {
   const [tasks, setTasks] = useState([]);
   const [title, setTitle] = useState('');
   const [clearance, setClearance] = useState('LEVEL_1');
-  const [time, setTime] = useState(5); 
+  const [time, setTime] = useState(10); 
   const [, setTick] = useState(0);
 
   useEffect(() => {
